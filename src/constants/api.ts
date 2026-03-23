@@ -6,9 +6,9 @@ export const API_PATHS = {
     PRESIGNED_URL: '/api/v1/admin/accounts/presigned-url/profile',
   },
   AUTH: {
-    LOGIN: '/api/v1/accounts/login/',
-    REFRESH_TOKEN: '/api/v1/accounts/me/refresh/',
-    LOGOUT: '/api/v1/accounts/logout/',
+    LOGIN: '/api/v1/accounts/login',
+    REFRESH_TOKEN: '/api/v1/accounts/me/refresh',
+    LOGOUT: '/api/v1/accounts/logout',
   },
   DEPLOYMENT: {
     LIST: '/api/v1/admin/exams/deployments',
