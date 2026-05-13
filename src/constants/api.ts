@@ -35,7 +35,7 @@ export const API_PATHS = {
       `api/v1/admin/subjects/${subjectId}/scatter`,
   },
   STUDENTS: {
-    LIST: '/api/v1/admin/students/',
+    LIST: '/api/v1/admin/accounts?role=student',
   },
   MEMBER: {
     STUDENT_REGISTRATION: '/api/v1/admin/student-enrollments',
