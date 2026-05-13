@@ -1,8 +1,8 @@
 export const API_PATHS = {
   ACCOUNTS: {
-    LIST: '/api/v1/admin/accounts/',
+    LIST: '/api/v1/admin/accounts',
     DETAIL: (accountId: number | string) =>
-      `/api/v1/admin/accounts/${accountId}/`,
+      `/api/v1/admin/accounts/${accountId}`,
     PRESIGNED_URL: '/api/v1/admin/accounts/presigned-url/profile',
   },
   AUTH: {
@@ -18,13 +18,13 @@ export const API_PATHS = {
     CREATE: '/api/v1/admin/exams/deployments',
   },
   COHORT: {
-    LIST: (courseId: number | string) => `/api/v1/${courseId}/cohorts`,
+    LIST: (cohortId: number | string) => `/api/v1/admin/cohorts/${cohortId}`,
   },
   EXAM: {
     LIST: '/api/v1/admin/exams',
     CREATE: '/api/v1/admin/exams',
     DETAIL: (examId: number | string) => `/api/v1/admin/exams/${examId}`,
-    PRESIGNED_URL: '/api/v1/admin/exams/presigned-url/thumbnail',
+    PRESIGNED_URL: '/api/v1/admin/exams/presigned-url',
   },
   GRAPH: {
     STUDENT_SCORES: (studentId: number | string) =>
@@ -38,7 +38,7 @@ export const API_PATHS = {
     LIST: '/api/v1/admin/students/',
   },
   MEMBER: {
-    STUDENT_REGISTRATION: '/api/v1/admin/student-enrollments/',
+    STUDENT_REGISTRATION: '/api/v1/admin/student-enrollments',
     STUDENT_REGISTRATION_ACCEPT: '/api/v1/admin/student-enrollments/accept',
     STUDENT_REGISTRATION_REJECT: '/api/v1/admin/student-enrollments/reject',
   },
@@ -56,8 +56,8 @@ export const API_PATHS = {
       `/api/v1/admin/exams/submissions/${submissionId}`,
   },
   WITHDRAWAL: {
-    LIST: '/api/v1/admin/withdrawals/',
+    LIST: '/api/v1/admin/withdrawals',
     DETAIL: (withdrawalId: number | string) =>
-      `/api/v1/admin/withdrawals/${withdrawalId}/`,
+      `/api/v1/admin/withdrawals/${withdrawalId}`,
   },
 }
