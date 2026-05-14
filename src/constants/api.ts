@@ -18,7 +18,8 @@ export const API_PATHS = {
     CREATE: '/api/v1/admin/exams/deployments',
   },
   COHORT: {
-    LIST: (cohortId: number | string) => `/api/v1/admin/cohorts/${cohortId}`,
+    LIST: (course_id: number | string) =>
+      `/api/v1/courses/${course_id}/cohorts`,
   },
   EXAM: {
     LIST: '/api/v1/admin/exams',
@@ -51,7 +52,7 @@ export const API_PATHS = {
       `/api/v1/admin/exams/questions/${questionId}`,
   },
   SUBMISSIONS: {
-    LIST: '/api/v1/admin/submissions',
+    LIST: '/api/v1/admin/exams/submissions',
     DETAIL: (submissionId: number | string) =>
       `/api/v1/admin/exams/submissions/${submissionId}`,
   },
