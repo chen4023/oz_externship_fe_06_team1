@@ -41,7 +41,7 @@ interface BaseDeployment {
   }
 }
 export interface ExamDeploymentItemType extends BaseDeployment {
-  status: 'activated' | 'deactivated'
+  status: 'Activated' | 'Deactivated'
   avg_score: number
 }
 export interface ExamDeploymentDetailType extends BaseDeployment {

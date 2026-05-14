@@ -78,7 +78,7 @@ export function ExamDeploymentList({
         title: '배포 활성 상태',
         size: 'lg',
         cell: (item) => {
-          const isActive = item.status === 'activated'
+          const isActive = item.status === 'Activated'
           return (
             <Switch
               checked={isActive}
