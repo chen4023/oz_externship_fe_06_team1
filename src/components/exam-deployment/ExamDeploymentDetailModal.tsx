@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { AlertModal, Button, Modal } from '@/components/common'
 import { type ExamDeploymentDetailType } from '@/types'
 import { Row2, Row4, TableWrap } from '../exam-attempt'
-import { formatDate } from '@/utils'
+import { formatDate, formatDateSecond } from '@/utils'
 
 type ExamDeploymentDetailModalProps = {
   isOpen: boolean
@@ -107,8 +107,8 @@ export function ExamDeploymentDetailModal({
                   rightLabel="시험 시간"
                   rightValue={`${duration_time || 0}분`}
                 />
-                <Row2 label="시작 일시" value={formatDate(open_at)} />
-                <Row2 label="종료 일시" value={formatDate(close_at)} />
+                <Row2 label="시작 일시" value={formatDateSecond(open_at)} />
+                <Row2 label="종료 일시" value={formatDateSecond(close_at)} />
                 <Row2 label="배포 생성 일시" value={formatDate(created_at)} />
               </TableWrap>
             </section>
