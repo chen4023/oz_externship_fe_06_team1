@@ -4,6 +4,7 @@ import { DataTable, type Column } from '@/components/table/data-table/DataTable'
 import type { ExamDeploymentItemType } from '@/types'
 import { TitleCell } from './HistoryList'
 import { Switch } from '@/components/exam-deployment'
+import { formatDateSecond } from '@/utils'
 
 type ExamDeploymentListProps = {
   data: ExamDeploymentItemType[]
@@ -71,7 +72,7 @@ export function ExamDeploymentList({
         key: 'date',
         title: '배포 생성 일시',
         size: 'xl',
-        cell: (item) => item.created_at,
+        cell: (item) => formatDateSecond(item.created_at),
       },
       {
         key: 'status',
